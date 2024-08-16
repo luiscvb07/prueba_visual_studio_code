@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios en HTML</title>
+    </head>
+    <body>
+        <h1>Concurso de series</h1>
+            <form>
+                <fieldset><!--Recuadro en el cual vamos a incorporar el cuestionario-->
+                    <legend>Vota por tu serie favorita</legend><!--Titulo del recuadro, en este caso del cuestionario-->
+
+                    <label>Nombre</label> <!--Son elementos Inline-->
+                    <input type="text" placeholder="Ej. Pepito"><!--Recuadro a llenar, puede ser de distintos tipos-->
+
+                    <br><br><!--Salto de linea, no tiene tag de cierre-->
+                    <label>Email</label>
+                    <input type="email" placeholder="ejemplo@gmail">
+
+                    <br><br>
+                    <label>Contraseña</label>
+                    <input type="password">
+
+                    <br><br>
+                    <label>Serie</label><!--Titulo del recuadro a llenar-->
+                    <select><!--Menu desplegable-->
+                        <option>Lost</option>
+                        <option>Fargo</option>
+                        <option>True Detective</option>
+                    </select>
+
+                    <br><br>
+                    <label>¿La ves en versión subtitulada?</label>
+                    <br>
+                    <input type="radio" name="vos"> No
+                    <br>
+                    <input type="radio" name="vos"> Si  
+
+                    <br><br>
+                    <label>¿Desde donde ve la serie?</label>
+                    <br>
+                    <input type="checkbox"> Desde la TV
+                    <br>
+                    <input type="checkbox"> Desde el ordenador
+                    <br>
+                    <input type="checkbox"> Desde la table 
+
+                    <br><br>
+                    <label>¿Por qué amas esa serie?</label>
+                    <br>
+                    <textarea rows="5" cols="70"></textarea>
+
+                    <br><br>
+                    <input type="submit" value="Participar">
+                    <input type="reset" value="Borrar formulario">
+                    
+
+                </fieldset>
+            </form>
+
+            <p>Este concurso es sometido a las siguientes reglas <a href="bases_legales.html">bases legales</a> ante notario</p>
+            
+            <hr>
+
+            <p>&copy; Copiright 2015 |  Tus series favoritas &amp; CO.</p>
+    </body>
+</html>
